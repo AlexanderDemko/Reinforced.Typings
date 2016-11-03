@@ -275,7 +275,7 @@ namespace Reinforced.Typings.Visitors
             {
                 Context = WriterContext.Module;
                 AppendTabs();
-                WriteLine(String.Format("module {0} {{", node.ModuleName));
+                WriteLine(String.Format("export module {0} {{", node.ModuleName));
                 Tab();
             }
             foreach (var rtCompilationUnit in node.CompilationUnits)
